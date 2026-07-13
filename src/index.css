@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  /* Purplish Theme */
+  --bg-dark: #130a1e;
+  --bg-gradient: linear-gradient(135deg, #130a1e 0%, #1f1135 100%);
+  --primary: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --accent: #d8b4fe;
+  
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  
+  /* Text Colors */
+  --text-main: #ffffff;
+  --text-muted: #a78bfa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 30px; /* Pill shape */
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
