@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import NavBar from "./NavBar";
 
 const ViewCar = () => {
     const [data,changeData] = useState([])
@@ -20,6 +21,8 @@ const ViewCar = () => {
     )
    
   return (
+    <>
+    <NavBar/>
     <div className="container mt-5">
       <h2 className="mb-4">View Cars</h2>
 
@@ -63,6 +66,7 @@ const ViewCar = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
